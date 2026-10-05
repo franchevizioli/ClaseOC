@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO/title>
+</head>
+<body>
+    <h2>3. Formularios e Inputs</h2>
+
+    <form action="#" method="get" class="caja-resaltada">
+        
+        <label for="nombreUsuario">Nombre de usuario:</label><br>
+        <input type="text" 
+               id="nombreUsuario" 
+               name="usuario" 
+               placeholder="Escribe tu usuario aquí" 
+               value="Invitado" 
+               required>
+        <p><small>Este campo usa <strong>type="text"</strong>, un <strong>placeholder</strong> de sugerencia, un <strong>value</strong> inicial ("Invitado"), un <strong>name</strong> para el envío de datos, y es <strong>required</strong> (obligatorio).</small></p>
+
+        <label for="clave">Contraseña (Deshabilitada):</label><br>
+        <input type="password" 
+               id="clave" 
+               name="contrasena" 
+               disabled>
+        <p><small>Este campo oculta el texto con <strong>type="password"</strong>, pero tiene el atributo <strong>disabled</strong>, por lo que no puedes escribir en él.</small></p>
+
+        <label>
+            <input type="checkbox" name="boletin" value="suscrito" checked>
+            Quiero recibir el boletín semanal.
+        </label>
+        <p><small>Es un <strong>type="checkbox"</strong> que aparece marcado por defecto gracias al atributo <strong>checked</strong>.</small></p>
+
+        <label for="lenguajes">Selecciona tus lenguajes favoritos (puedes elegir varios):</label><br>
+        <select name="lenguajes" id="lenguajes" multiple size="4">
+            <option value="html" selected>HTML (Seleccionado por defecto)</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+            <option value="python">Python</option>
+        </select>
+        <p><small>Este menú desplegable usa <strong>multiple</strong> para permitir varias selecciones, y la opción de HTML usa <strong>selected</strong> para estar resaltada desde el principio.</small></p>
+
+        <button type="submit">Enviar Formulario</button>
+    </form>
+</body>
+</html>
